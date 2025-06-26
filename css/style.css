@@ -210,7 +210,7 @@ transform: scale(1.03);
     }
 }
 /* ---------------------------------------------------------------------------- */
-/* Tablet (até 930)*/
+/* Tablet */
 @media (max-width: 1024px) {
     #senai {
         width: 25vw;
@@ -290,16 +290,19 @@ transform: scale(1.03);
 /* PARA TABLET (vertical) */
 @media (max-width: 768px){
     #senai {
-        width: 20vw;
+        width: 40vw;
+    }
+    .traco{
+        background-color: transparent;
     }
     #mor {
         font-size: 2vh;
         margin-top: 2.9%;
-        margin-left: 24.2%;
+        margin-left: 45%;
     }
     #logo {
-        width: 8vw;
-        margin-top: 9%;
+        width: 15vw;
+        margin-top: 20%;
     }
     #cima {
         width: 16.71vw;
@@ -307,32 +310,33 @@ transform: scale(1.03);
     #bolinhadireita {
         width: 8vw;
         margin-left: 92%;
-        margin-top: 50%;
+        margin-top: 130%;
     }
     #bolinhaesquerda {
         width: 8vw;
-        margin-top: 20%;
+        margin-top: 50%;
     }
     #esquerda {
         position: absolute;
         width: 30vw;
-        margin-top: 78.35%;
+        margin-top: 230%;
     }
     #direita {
         width: 30vw;
-        margin-top: 85.25%;
+        margin-top: 240%;
     }
     #grupo {
         width: 8vw;
-        margin-top: 100%;
-        margin-left: 36%;
+        margin-top: 254%;
+        margin-left: 33%;
     }
     #nome {
-        margin-top: 100.6%;
-        margin-left: 45%;
+        font-size: 1vh;
+        margin-top: 254.6%;
+        margin-left: 40%;
     }
     .fundo {
-        width: 50vw;
+        width: 100vw;
         height: 60vh;
         margin-top: 23%;
         margin-left: 25%;
@@ -417,13 +421,8 @@ transform: scale(1.03);
         margin-top: 60%;
     }
     #entrar {
-        width: 25vw;
+        width: 55vw;
         margin-top: 85%;
-        margin-left: 33%;
+        margin-left: 11%;
     }
 }
-
-/* ---------------------------------------------------------------------------- */
-/* PARA CELULAR II */
-/* @media (max-width: 278px){
-} */
