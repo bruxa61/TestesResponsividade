@@ -211,7 +211,7 @@ transform: scale(1.03);
 }
 /* ---------------------------------------------------------------------------- */
 /* Tablet */
-@media (max-width: 1024px) {
+@media (max-width: 1199px) {
     #senai {
         width: 25vw;
     }
@@ -382,6 +382,11 @@ transform: scale(1.03);
     #logo {
         width: 9vw;
         margin-top: 10%;
+    }
+     #bolinhadireita {
+        width: 8vw;
+        margin-left: 92%;
+        margin-top: 100%;
     }
      #esquerda {
         margin-top: 150.35%;
