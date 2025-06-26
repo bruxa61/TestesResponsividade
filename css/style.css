@@ -210,8 +210,8 @@ transform: scale(1.03);
     }
 }
 /* ---------------------------------------------------------------------------- */
-/* Tablet (até 852)*/
-@media (max-width: 852px) {
+/* Tablet (até 930)*/
+@media (max-width: 930px) {
     #senai {
         width: 25vw;
     }
@@ -228,11 +228,11 @@ transform: scale(1.03);
         margin-top: 12%;
     }
     #cima {
-        width: 16.71vw;
+        width: 11vw;
     }
     #bolinhadireita {
         width: 8vw;
-        margin-left: 92%;
+        margin-left: 85%;
         margin-top: 80%;
     }
     #bolinhaesquerda {
@@ -242,24 +242,24 @@ transform: scale(1.03);
     #esquerda {
         position: absolute;
         width: 30vw;
-        margin-top: 117%;
+        margin-top: 95%;
     }
     #direita {
         width: 30vw;
-        margin-top: 125%;
+        margin-top: 107%;
     }
     #grupo {
         width: 8vw;
-        margin-top: 140%;
+        margin-top: 120%;
         margin-left: 36%;
     }
     #nome {
-        margin-top: 140.6%;
+        margin-top: 120.6%;
         margin-left: 45%;
     }
     .fundo {
         width: 60vw;
-        height: 60vh;
+        height: 50vh;
         margin-top: 30%;
         margin-left: 20%;
     }
@@ -268,21 +268,21 @@ transform: scale(1.03);
     }
     #email {
         width: 48vw;
-        margin-top: 50%;
+        margin-top: 45%;
     }
     #usu {
-        margin-top: 40%;
+        margin-top: 35%;
     }
     #senha {
         width: 48vw;
-        margin-top: 80%;
+        margin-top: 65%;
     }
     #sen {
-        margin-top: 70%;
+        margin-top: 55%;
     }
     #entrar {
         width: 48vw;
-        margin-top: 105%;
+        margin-top: 83%;
         margin-left: 10%;
     }
 }
