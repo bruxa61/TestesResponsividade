@@ -210,7 +210,7 @@ transform: scale(1.03);
     }
 }
 /* ---------------------------------------------------------------------------- */
-/* Tablet */
+/* PARA TABLET Vertical */
 @media (max-width: 1199px) {
     #senai {
         width: 25vw;
@@ -277,6 +277,9 @@ transform: scale(1.03);
         width: 48vw;
         margin-top: 65%;
     }
+    input{
+        font-size: 3vw;
+    }
     #sen {
         margin-top: 55%;
     }
@@ -284,84 +287,6 @@ transform: scale(1.03);
         width: 48vw;
         margin-top: 83%;
         margin-left: 10%;
-    }
-}
-/* ---------------------------------------------------------------------------- */
-/* PARA TABLET (vertical) */
-@media (max-width: 768px){
-    #senai {
-        width: 40vw;
-    }
-    .traco{
-        background-color: transparent;
-    }
-    #mor {
-        font-size: 2vh;
-        margin-top: 2.9%;
-        margin-left: 45%;
-    }
-    #logo {
-        width: 15vw;
-        margin-top: 20%;
-    }
-    #cima {
-        width: 16.71vw;
-    }
-    #bolinhadireita {
-        width: 8vw;
-        margin-left: 92%;
-        margin-top: 130%;
-    }
-    #bolinhaesquerda {
-        width: 8vw;
-        margin-top: 50%;
-    }
-    #esquerda {
-        position: absolute;
-        width: 30vw;
-        margin-top: 230%;
-    }
-    #direita {
-        width: 30vw;
-        margin-top: 240%;
-    }
-    #grupo {
-        width: 8vw;
-        margin-top: 254%;
-        margin-left: 33%;
-    }
-    #nome {
-        font-size: 1vh;
-        margin-top: 254.6%;
-        margin-left: 40%;
-    }
-    .fundo {
-        width: 100vw;
-        height: 60vh;
-        margin-top: 23%;
-        margin-left: 25%;
-    }
-    h2 {
-        margin-top: 19%;
-    }
-    #email {
-        width: 39vw;
-        margin-top: 42%;
-    }
-    #usu {
-        margin-top: 32%;
-    }
-    #senha {
-        width: 39vw;
-        margin-top: 62%;
-    }
-    #sen {
-        margin-top: 52%;
-    }
-    #entrar {
-        width: 21.37vw;
-        margin-top: 85%;
-        margin-left: 28%;
     }
 }
 /* ---------------------------------------------------------------------------- */
@@ -421,6 +346,9 @@ transform: scale(1.03);
     #senha {
         width: 55vw;
         margin-top: 70%;
+    }
+    input{
+        font-size: 3vw;
     }
     #sen {
         margin-top: 60%;
