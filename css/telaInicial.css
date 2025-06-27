@@ -207,10 +207,13 @@ transform: scale(1.05);
     width: 17vw;
   }
   .container-grafico {
-    height: 22vh;
+    height: 23vh;
+    width: 60vh;
     margin-top: 17%;
+    margin-left: 10%;
   }
   #chart{
+    height: 100%;
     margin-top: -1%;
   }
   #Alternar{
@@ -219,7 +222,7 @@ transform: scale(1.05);
   .button-container {
     width: 80%;
     margin-left: 10%;
-    margin-top: 23%;
+    margin-top: 27%;
     gap: 3vw;
   }
 
@@ -238,12 +241,12 @@ transform: scale(1.05);
 @media (max-width: 425px){
   .container-grafico {
     width: 80%;
-    height: 45vh;
+    height: 47vh;
     margin-top: 20%;
     margin-left: 10%;
   }
   #chart{
-    margin-top: -5%;
+    margin-top: -4%;
   }
   #Alternar{
     width: 16vh;
@@ -255,7 +258,7 @@ transform: scale(1.05);
   .button-container {
     width: 80%;
     margin-left: 10%;
-    margin-top: 23%;
+    margin-top: 35%;
     gap: 3vw;
   }
 
