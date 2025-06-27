@@ -187,7 +187,24 @@ section {
 transform: scale(1.05);
   }
 
-/* ---------------------------------------------------------------------------- */
+#adicionarUsuario{
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 54.2vw;
+    text-decoration: none;
+    color: white;
+    padding-inline: 0.5vw;
+    padding-block: 1vh;
+    background-color: rgb(73, 73, 73);
+    border-radius: 0.4vw;
+  }
+  #adicionarUsuario:hover{
+    background-color: black;
+    transform: scale(1.05);
+    transition: all ease 0.4s;
+  }
+
+  /* ---------------------------------------------------------------------------- */
 /* Monitores menores */
 @media (max-width: 1400px){
   .container-grafico {
@@ -205,6 +222,9 @@ transform: scale(1.05);
   }
   #logo_senai{
     width: 17vw;
+  }
+  #adicionarUsuario{
+    margin-top: 1vh;
   }
   .container-grafico {
     height: 23vh;
@@ -252,12 +272,18 @@ transform: scale(1.05);
     width: 16vh;
     height: 2.5vh;
   }
-   #logo_senai{
+  #logo_senai{
     width: 25vw;
     margin-top: 2%;
   }
   .navbar{
     height: 6vh;
+  }
+  #adicionarUsuario{
+    font-size: 1.5vh;
+    margin-top: 1vh;
+    margin-left: 41vw;
+    width: 23vw;
   }
   .button-container {
     width: 80%;

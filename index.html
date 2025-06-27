@@ -6,11 +6,12 @@
     <title>Exibir Gráfico</title>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!-- Adicionando SweetAlert -->
-    <link rel="stylesheet" href="css/telaInicial.css">
+    <link rel="stylesheet" href="css/telaInicial-Professor.css">
 </head>
 <body>
     <div class="navbar">  
         <img src="imagens/SENAI_logo.png" alt="Logo do senai" id="logo_senai">
+        <a href="adicionarUsuario.html" id="adicionarUsuario">Adicionar usuário</a>
         <img src="imagens/icon_sair.png" alt="icone de sair" id="logoutButton">
     </div>
 <section>
@@ -125,8 +126,6 @@
     function redirecionarEdicao() {
         window.location.href = "edicao.html";
     }
-
-
     //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
     // Seleciona o botão e o dropdown
     const botaoEstoque = document.getElementById("botaoEstoque");
