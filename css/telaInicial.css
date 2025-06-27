@@ -200,23 +200,46 @@ transform: scale(1.05);
 /* ---------------------------------------------------------------------------- */
 /* PARA TABLET Vertical */
 @media (max-width: 1199px){
+  .navbar{
+    height: 5vh;
+  }
   #logo_senai{
-    width: 15vw;
+    width: 17vw;
   }
   .container-grafico {
-    height: 46vh;
-    margin-top: 7%;
+    height: 22vh;
+    margin-top: 17%;
   }
   #chart{
     margin-top: -1%;
+  }
+  #Alternar{
+    margin-top: 2%;
+  }
+  .button-container {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 23%;
+    gap: 3vw;
+  }
+
+  .button {
+    width: 20vw;
+    height: 10vh;
+    font-size: 1vh;
+    flex-direction: column;
+  }
+  .button img{
+    width: 50%;
   }
 }
 /* ---------------------------------------------------------------------------- */
 /* PARA CELULAR */
 @media (max-width: 425px){
   .container-grafico {
+    width: 80%;
     height: 45vh;
-    margin-top: 15%;
+    margin-top: 20%;
     margin-left: 10%;
   }
   #chart{
@@ -230,9 +253,9 @@ transform: scale(1.05);
     height: 20%;
   }
   .button-container {
-    width: 60%;
+    width: 80%;
     margin-left: 10%;
-    margin-top: 18%;
+    margin-top: 23%;
     gap: 3vw;
   }
 
