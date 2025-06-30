@@ -208,8 +208,8 @@ transform: scale(1.05);
   }
   .container-grafico {
     height: 23vh;
-    width: 60vh;
-    margin-top: 17%;
+    width: 50vh;
+    margin-top: 30%;
     margin-left: 10%;
   }
   #chart{
@@ -222,7 +222,7 @@ transform: scale(1.05);
   .button-container {
     width: 80%;
     margin-left: 10%;
-    margin-top: 27%;
+    margin-top: 45%;
     gap: 3vw;
   }
 
