@@ -274,7 +274,7 @@ h1 {
         margin-left: 28.7%;
     }
     #mor {
-        font-size: 2vh;
+        font-size: 1.7vh;
         margin-top: 2.9%;
         margin-left: 30%;
     }
@@ -294,6 +294,9 @@ h1 {
     #bolinhaesquerda {
         width: 8vw;
         margin-top: 20%;
+    }
+    #bolinhacima{
+        margin-top: -10%;
     }
     #esquerda {
         position: absolute;
@@ -315,7 +318,7 @@ h1 {
     }
     #usuarioForm {
         width: 70vw;
-        height: 50vh;
+        height: 55vh;
         margin-top: 40%;
         margin-left: 20%;
     }
