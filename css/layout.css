@@ -55,3 +55,19 @@ body {
     height: auto;
     width: 35vh;
 }
+
+/* ---------------------------------------------------------------------------- */
+/* PARA TABLET Vertical */
+@media (max-width: 1199px){
+    .layout img {
+        width: 80%;
+    }
+    .footer {
+        margin-top: 65%;
+    }
+}
+/* ---------------------------------------------------------------------------- */
+/* PARA CELULAR */
+@media (max-width: 425px){
+    
+}
