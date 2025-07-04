@@ -4,121 +4,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/adicionarUsuario.css">
-    <title>SGA - Adicionar Usuário</title>
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+    <title>SGA - Layout do Estoque</title>
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 
 <body>
+    <!-- CABEÇALHO -->
+    <!---------------NAVBAR-------------------------------------------------->
+    <div class="navbar-caixa">
+        <div class="conteudo-nav">
+            <div class="texto-nav">Layout do Estoque</div>
 
-    <img id="bolinhacima" src="imglogineusuario/bolinhas.svg" alt="">
-    <img id="bolinhadireita" src="imglogineusuario/bolinhas.svg" alt="">
-    <img id="bolinhaesquerda" src="imglogineusuario/bolinhas.svg" alt="">
-    <img id="cima" src="imglogineusuario/caixascima.svg" alt="">
-    <img id="direita" src="imglogineusuario/caixasdireita.svg" alt="">
-    <img id="esquerda" src="imglogineusuario/caixasesquerda.svg" alt="">
-    <img id="logo" src="imglogineusuario/logosga.svg" alt="">
-    <img id="senai" src="imglogineusuario/senaibranco.svg" alt="">
-    <img id="grupo" src="imglogineusuario/logogrupo.svg" alt="">
-
-    <div class="traco"></div>
-    <p id="mor">Morvan Figueiredo</p>
-    <p id="nomee">©DEVS-SENAI-SP - 2024</p>
-
-    <form id="usuarioForm">
-        <h1>Cadastro de Usuários</h1>
-
-        <div class="input-container" id="conjunome">
-            <img src="imglogineusuario/pessoa.svg" alt="Ícone" class="input-icon">
-            <input type="text" id="nome" placeholder="Nome de Usuário" class="custom-input" required>
+            <button id="menu-btn" class="menu-btn">&#9776;</button>
         </div>
-        <br><br>
 
-        <div class="input-container" id="conjuemail">
-            <img src="imglogineusuario/email.svg" alt="Ícone" class="input-icon">
-            <input type="text" id="email" placeholder="Email do Usuário" class="custom-input" required>
+        <!--------------------------------HAMBURGUER------------------------------------------------------------------------------------>
+        <div id="sidebar" class="sidebar">
+            <button id="close-btn" class="close-btn">&times;</button>
+            <img src="imglogineusuario/senaibranco.svg" alt="" />
+            <h3>Menu</h3>
+            <ul>
+
+
+                <li class="home">
+                    <a href="telaInicial.html" id="home">
+                        <div class="home"></div>
+                        <span>Home</span>
+                    </a>
+                </li>
+
+
+                <li class="cadastrar">
+                    <a href="cadastro1.html" id="cadas">
+                        <div class="box-of-good-good"></div>
+                        <span>Cadastrar</span>
+                    </a>
+                </li>
+
+
+                <li class="edicao">
+                    <a href="edicao.html" id="edicao">
+                        <div class="pencil"></div>
+                        <span>Edição</span>
+                    </a>
+                </li>
+
+
+                <li class="estoque-item">
+                    <a href="#" id="esto" class="estoque-link">
+                        <div class="boxes-of-good-good"></div>
+                        <span>Estoque</span>
+                    </a>
+                    <ul id="estoque-submenu" class="submenu">
+                        <li><a href="catalogo.html">Catálogo</a></li>
+                        <li><a href="estoque_real.html">Estoque Real e Inventário</a></li>
+                        <li><a href="layout.html">Layout do Estoque</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="financeiro">
+                    <a href="financeiro.html" id="finan">
+                        <div class="financial"></div>
+                        <span>Financeiro</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="container-logos">
+                <h4>SGA - Sistema de Gerenciamento de Armazém</h4>
+                <img src="imagens/logo-emp.svg" id="logo-gato" alt="" /><img src="imagens/logo-soft.svg"
+                    id="logo-cubo" />
+            </div>
         </div>
-        <br><br>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
 
-        <div class="input-container" id="conjusenha">
-            <img src="imglogineusuario/senha.svg" alt="Ícone" class="input-icon">
-            <input type="text" id="senha" placeholder="Crie uma Senha" class="custom-input" required>
-        </div>
-        <br><br>
+    <div class="layout">
+        <img src="imagens/LayoutEstoque.svg" alt="">
+    </div>
 
-        <div class="input-container" id="conjudatanasc">
-            <img src="imglogineusuario/nascimento.svg" alt="Ícone" class="nascimage">
-            <input type="text" class="custom-text" placeholder="Data de Nascimento" onfocus="toggleDateInput(this)">
-            <input type="date" id="dataNasc" onblur="toggleTextInput(this)" required>
-        </div>
-        <br><br>
+    <div class="footer">
+        <img src="imgCADASTRO/gatinhoRodapé.svg" alt="">
+    </div>
 
-        <div class="input-container" id="conjuentrada">
-            <img src="imglogineusuario/entrada.svg" alt="Ícone" class="entraimage">
-            <input type="text" class="custom-text2" placeholder="Data de Entrada" onfocus="toggleDateInput(this)">
-            <input type="date" id="dataEntrada" onblur="toggleTextInput(this)" required>
-        </div>
-        <br><br>
-
-        <button id="enviar" type="submit">Enviar</button>
-    </form>
-    
-    <a id="sair" href="telaInicial-Professor.html">Sair</a>
-
-    <!-- Script para "esconder" o input data -->
+    <!-- SCRIPT -->
     <script>
-        function toggleDateInput(textInput) {
-            const dateInput = textInput.nextElementSibling;
-            const image = textInput.previousElementSibling;
-            textInput.style.display = 'none';
-            dateInput.style.display = 'inline-block';
-            image.style.display = 'none'; // Oculta a imagem
-            dateInput.focus();
-        }
-    
-        function toggleTextInput(dateInput) {
-            if (!dateInput.value) {
-                const textInput = dateInput.previousElementSibling;
-                const image = textInput.previousElementSibling;
-                dateInput.style.display = 'none';
-                textInput.style.display = 'inline-block';
-                image.style.display = 'inline-block'; // Exibe a imagem novamente
-            }
-        }
-    </script>
+        document.addEventListener('DOMContentLoaded', function () {
 
+            const estoqueItem = document.querySelector('.estoque-item');
+            const estoqueSubMenu = document.getElementById('estoque-submenu');
+            const estoqueLink = document.getElementById('esto');
+            const iconeEstoque = estoqueLink.querySelector('.boxes-of-good-good');
 
-
-
-    <script>
-        document.getElementById('usuarioForm').addEventListener('submit', async (event) => {
-            event.preventDefault();
-
-            const usuario = {
-                email: document.getElementById('email').value,
-                nome: document.getElementById('nome').value,
-                senha: document.getElementById('senha').value,
-                dataNasc: document.getElementById('dataNasc').value,
-                dataEntrada: document.getElementById('dataEntrada').value
-            };
-
-            try {
-                const response = await fetch('http://localhost:3000/adicionar-usuario', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(usuario)
+            const submenuLinks = estoqueSubMenu.querySelectorAll('a');
+            submenuLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.stopPropagation();
                 });
-                const message = await response.text();
-                alert(message);
-            } catch (error) {
-                alert('Erro ao enviar dados: ' + error.message);
-            }
+            });
+
+            estoqueItem.addEventListener('click', function (event) {
+                event.preventDefault();
+
+                estoqueItem.classList.toggle('active');
+                if (estoqueItem.classList.contains('active')) {
+                    estoqueSubMenu.style.display = "block";
+                    estoqueItem.style.backgroundColor = "#000";
+                    estoqueLink.style.color = "#319DF6";
+                    iconeEstoque.style.backgroundImage = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23319df6' d='M10 4v11h12V4zm2 2h2v4l2-2l2 2V6h2v7h-8zM3 17v11h12V17zm14 0v11h12V17zM5 19h2v4l2-2l2 2v-4h2v7H5zm14 0h2v4l2-2l2 2v-4h2v7h-8z'/%3E%3C/svg%3E\")";
+                } else {
+                    estoqueSubMenu.style.display = "none";
+                    estoqueItem.style.backgroundColor = "";
+                    estoqueLink.style.color = "";
+                    iconeEstoque.style.backgroundImage = "";
+                }
+            });
+
+            // Fecha o dropdown ao clicar fora
+            document.addEventListener('click', function (event) {
+                if (!estoqueItem.contains(event.target)) {
+                    estoqueItem.classList.remove('active');
+                    estoqueSubMenu.style.display = "none";
+                    estoqueItem.style.backgroundColor = "";
+                    estoqueLink.style.color = "";
+                    iconeEstoque.style.backgroundImage = "";
+                }
+            });
+
+
         });
     </script>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>
