@@ -512,6 +512,6 @@ select {
         width: 100%;
     }
     #cabecalho-table{
-        font-size: 1vh;
+        font-size: 0.7vh;
     }
 }
