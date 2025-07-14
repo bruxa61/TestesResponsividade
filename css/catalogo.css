@@ -508,4 +508,10 @@ select {
         width: 23vw;
         margin-left: 4%;
     }
+    .content-table{
+        width: 100%;
+    }
+    #cabecalho-table{
+        font-size: 1vh;
+    }
 }
