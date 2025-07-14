@@ -11,11 +11,11 @@ body {
 }
 
 /* CABEÇALHO */
-.texto-nav {
+.texto-nav{
     color: #FFCC00;
 }
 
-.sidebar ul li #finan {
+.sidebar ul li #finan{
     color: #FFCC00;
 
     & .financial {
@@ -28,12 +28,13 @@ body {
     }
 }
 
-.financeiro {
+.financeiro{
     background-color: #000;
 }
 
 
-#formPesquisa {
+
+#formPesquisa{
     display: flex;
     flex-direction: row;
 }
@@ -43,22 +44,18 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-    /* Espaçamento entre os elementos */
-    padding: 1rem;
-    /* Espaço interno */
+    gap: 1rem; /* Espaçamento entre os elementos */
+    padding: 1rem; /* Espaço interno */
     background-color: white;
     border-radius: 1vh;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    /* Sombra leve */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 /* Botão Filtrar */
 #filtrarcontainer {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    /* Espaçamento entre o botão e a barra de pesquisa */
+    gap: 0.5rem; /* Espaçamento entre o botão e a barra de pesquisa */
 }
 
 /* --------------------Filtro--------------------- */
@@ -101,6 +98,7 @@ input:focus,
 select:focus {
     outline: 0;
 }
+
 
 /* Barra de entrada */
 #entrada {
@@ -192,8 +190,7 @@ select {
     border: none;
     border-radius: 0.5vh;
     cursor: pointer;
-    appearance: none;
-    /* Remove a seta padrão */
+    appearance: none; /* Remove a seta padrão */
 }
 
 /* Estilo dos campos de data */
@@ -228,22 +225,19 @@ select {
     display: block;
 }
 
-#ajeitar {
+#ajeitar{
     display: flex;
     flex-direction: column;
 }
-
-#subajeitada {
+#subajeitada{
     display: flex;
     justify-items: center;
     justify-content: space-around;
     margin-top: 5%;
 }
-
-#textinho {
+#textinho{
     color: #FFCC00;
 }
-
 #dropdown {
     display: none;
     position: relative;
@@ -285,7 +279,7 @@ select:focus {
 option {
     font-size: 14px;
     padding: 1vh;
-    color: #ffffff;
+    color: #FFCC00;
 }
 
 /* Estilo quando o select é hovered */
@@ -293,16 +287,12 @@ select:hover {
     border-color: #FFCC00;
 }
 
-select:hover option:hover {
-    background-color: #eaeaea;
-}
 
-#inputdata {
+#inputdata{
     margin-top: 5%;
     margin-left: 10%;
 }
-
-.datasize {
+.datasize{
     width: 6vw;
     height: 4vh;
     margin-right: 2%;
@@ -313,14 +303,14 @@ select:hover option:hover {
     border-radius: 1vh;
 }
 
-#ordernaritem {
+#ordernaritem{
     margin-top: 5%;
     margin-left: 10%;
 }
 
 /* acabou mudanças */
 #entrada {
-
+   
     z-index: 1;
     width: 40vw;
     height: 4vh;
@@ -332,19 +322,15 @@ select:hover option:hover {
 }
 
 #entrada::placeholder {
-    color: #FFCC00;
-    /* Cor do placeholder */
-    font-size: 2.5vh;
-    /* Tamanho da fonte do placeholder */
-    opacity: 1;
-    /* Garante visibilidade */
+    color: #FFCC00; /* Cor do placeholder */
+    font-size: 2.5vh; /* Tamanho da fonte do placeholder */
+    opacity: 1; /* Garante visibilidade */
 }
-
-#entrada:focus,
-#entrada:focus,
-#entradao:focus {
+#entrada:focus, #entrada:focus, #entradao:focus {
     outline: 0;
 }
+
+
 
 #caixa-recebimento {
     width: 9vh;
@@ -363,10 +349,9 @@ select:hover option:hover {
     margin-right: 16vh;
     justify-self: right;
     padding-bottom: 0.5%;
-
 }
 
-#caixa-recebimento:hover {
+#caixa-recebimento:hover{
     background-color: White;
     color: #FFCC00;
 
@@ -393,16 +378,14 @@ select:hover option:hover {
     z-index: 99999;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
     margin-left: 38%;
-
 }
 
 #formContainer #close-btn{
     color: #000;
 }
 
-#formContainer h2 {
+#formContainer h2{
     padding-top: 2vh;
-    padding-bottom: 2vh;
     justify-self: center;
     font-size: 3.6vh;
     font-weight: 450;
@@ -453,8 +436,8 @@ select:hover option:hover {
 
 #registrationForm input:focus+label,
 #registrationForm input:not(:placeholder-shown)+label {
-    top: -1vh;
-    left: 3.3vw;
+    top: -2vh;
+    left: 1.5vw;
     font-size: 15px;
     color: #FFCC00;
     font-weight: 430;
@@ -465,6 +448,104 @@ select:hover option:hover {
     visibility: hidden;
     z-index: 991119;
 }
+
+/* Estilo para inputs de número, data e selects */
+.input-container input[type="number"],
+.input-container input[type="date"] {
+    display: flex;
+    justify-self: center;
+    width: 80%; /* Garante largura igual para todos os campos */
+    padding: 1.5vh 2vw;  /* Usando vh e vw para tamanho proporcional */
+    border: 1px solid #FFCC00;
+    border-radius: 5px;
+    outline: none;
+    background-color: #fafafa;
+    transition: border-color 0.3s ease;
+    margin-top: 2rem;
+}
+.input-container select{
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    margin-left: 1vw;
+    width: 80%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+    z-index: 9911119;
+}
+
+select #numb_lote option{
+    display: flex;
+    justify-self: center;
+    align-content: center;
+    margin-left: 1vw;
+    width: 80%;
+    padding: 11px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+    z-index: 9911119;
+}
+
+.input-container option{
+    color: #FFCC00;
+}
+
+#quantity_hint{
+    margin-left: 3.6vw;
+}
+
+#product_code label,
+#quantity_received label{
+   margin-top: -30vh;
+    margin-left: 2vw;
+    font-size: 1.175vw;
+}
+
+.input-container select
+
+
+/* Quando o input ou select está em foco */
+.input-container input[type="number"]:focus,
+.input-container input[type="date"]:focus {
+    border-color: #FFCC00;
+}
+
+/* Estilo do label */
+.input-container label {
+    position: absolute;
+    top: -1.5vh;
+    left: 2vw;
+    font-size: 1.2vw;
+    color: #FFCC00;
+    transition: 0.3s ease;
+}
+
+/* Quando o input ou select está em foco ou preenchido */
+.input-container input:focus + label,
+.input-container select:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: -2vh;
+    margin-left: 2vw;
+    font-size: 1.175vw;
+    color: #FFCC00;
+}
+
+/* Estilo do parágrafo de dica (estoque disponível) */
+.input-container #quantity_hint {
+    font-size: 1.2vw;
+    color: #555;
+    margin-top: 1vw;
+}
+
 
 /* Estilo do botão de envio */
 #submitButton {
@@ -482,7 +563,7 @@ select:hover option:hover {
     z-index: 999;
 }
 
-#submitButton h3 {
+#submitButton h3{
     align-self: center;
     justify-content: center;
     margin-left: 5.7vh;
@@ -505,40 +586,19 @@ select:hover option:hover {
     margin: 0 auto;
     padding: 20px;
     border-radius: 8px;
-}
+  }
 
-#btn-recebim {
+  a{
+    text-decoration: none;
+  }
+  #btn-recebim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     width: 19vh;
     height: 9vh;
-    border-radius: 1.2vh;
-    border: #FFCC00;
-    font-size: 2.5vh;
-    font-weight: 600;
-    color: white;
-    background-color: #FFCC00;
-}
-
-
-#btn-saida {
-    text-decoration: none;
-    width: 19vh;
-    height: 9vh;
-    border-radius: 1.2vh;
-    border-style: solid;
-    border-color: #FFCC00;
-    border-width: 0.22vw;
-    font-size: 2.5vh;
-    font-weight: 600;
-    color: #FFCC00;
-    background-color: WHIte;
-}
-
-#btn-saldo {
-    text-decoration: none;
-    width: 19vh;
-    height: 9vh;
-    border-radius: 1.2vh;
+    border-radius:1.2vh ;
     border-style: solid;
     border-color: #FFCC00;
     border-width: 0.22vw;
@@ -546,21 +606,53 @@ select:hover option:hover {
     font-weight: 600;
     color: #FFCC00;
     background-color: white;
-}
+  }
 
-#btn-saida:hover,
-#btn-saldo:hover {
+
+  #btn-saida{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19vh;
+    height: 9vh;
+    border-radius:1.2vh ;
+    border: #FFCC00;
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: white;
+    background-color: #FFCC00;
+  }
+
+  #btn-saldo{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 19vh;
+    height: 9vh;
+    border-radius:1.2vh ;
+    border-style: solid;
+    border-color: #FFCC00;
+    border-width: 0.22vw;
+    font-size: 2.5vh;
+    font-weight: 600;
+    color: #FFCC00;
+    background-color: white;
+  }
+
+  #btn-recebim:hover, #btn-saldo:hover{
     border-style: solid;
     border-color: #FFCC00;
     border-width: 0.27vw;
     background-color: #FFCC00;
     color: white;
     cursor: pointer;
-}
+  }
 
 
 
-#toggle-filter {
+  #toggle-filter {
 
     display: flex;
     width: 100%;
@@ -582,7 +674,8 @@ select:hover option:hover {
     border-radius: 1vh;
     /* Bordas arredondadas */
     margin-top: -69vh;
-
+ 
+   
 }
 
 
@@ -606,27 +699,27 @@ select:hover option:hover {
     display: flex;
     z-index: 1;
     margin-top: 2vh;
-    margin-bottom: 1.5vh;
+    margin-bottom:1.5vh ;
     justify-self: center;
     align-items: center;
     width: 100%;
     max-width: 800px;
-}
-
-.title {
+  }
+ 
+  .title {
     white-space: nowrap;
     margin-right: 1vh;
     font-size: larger;
-}
-
-.divider {
+  }
+ 
+  .divider {
     flex-grow: 2;
-    border-top: 0.4vh dashed #000;
+    border-top: 0.7vh dashed #000;
     width: 300vh;
-}
+  }
 
 /* ------------------------Recebimentos------------------- */
-.tabela-recebimentos {
+.tabela-recebimentos{
     display: flex;
     width: auto;
     justify-content: center;
@@ -638,46 +731,38 @@ select:hover option:hover {
     width: 100%;
     max-width: 800px;
     margin-top: auto;
-    overflow-y: auto;
-    /* ativa o scroll vertical */
-    overflow-x: hidden;
-    /* desativa o scroll horizontal */
+    overflow-y: auto; /* ativa o scroll vertical */
+    overflow-x: hidden; /* desativa o scroll horizontal */
     height: 55.5vh;
     padding-right: 1vw;
 }
 
-.linhaPrincipal {
+.linhaPrincipal{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0.7vh;
     gap: 5vh;
 }
-
 .table-container::-webkit-scrollbar {
-    width: 0.6vw;
-    /* largura da barra */
-}
-
+    width: 0.6vw; /* largura da barra */
+  }
+ 
 .table-container::-webkit-scrollbar-thumb {
     width: 2vw;
-    background: #FFCC00;
-    /* cor do "polegar" da barra */
-    border-radius: 2vw;
-    /* arredondamento */
-}
-
+    background: #FFCC00; /* cor do "polegar" da barra */
+    border-radius: 2vw; /* arredondamento */
+  }
+ 
 .table-container::-webkit-scrollbar-thumb:hover {
-    background: #c8a001;
-    /* cor ao passar o mouse */
-}
+    background: #c8a001; /* cor ao passar o mouse */
+  }
 
-.produtos {
+.produtos{
     margin-bottom: 1.9vh;
     gap: 5vh;
 
 }
-
 .row {
     display: flex;
     justify-content: space-between;
@@ -688,13 +773,12 @@ select:hover option:hover {
     cursor: pointer;
     background-color: #fafafa;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5px;
-    /* Adiciona um pequeno espaçamento entre as linhas principais */
+    margin-bottom: 5px; /* Adiciona um pequeno espaçamento entre as linhas principais */
 }
-
+   
 
 .cell {
-    display: flex;
+    display:flex;
     flex-direction: column;
     text-align: left;
     color: black;
@@ -784,15 +868,8 @@ select:hover option:hover {
     #caixote{
         margin-top: 12%;
     }
-    .input-container {
-        margin-bottom: 15px;
-    }
     #registrationForm input {
         font-size: 13px;
-    }
-    #registrationForm input:focus+label,
-    #registrationForm input:not(:placeholder-shown)+label {
-        left: 3.5vw;
     }
     #submitButton {
         width: 34%;
